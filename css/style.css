@@ -1,0 +1,96 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 1rem;
+    z-index: 9999;
+    background: #ffffff;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px 0.5px rgba(0,0,0,0.2);
+}
+
+#brandLogo {
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index: 70;
+    height:80px;
+    width:400px;
+    text-decoration: none;
+}
+
+#brandLogo img {
+    height:100%;
+    float:left;
+    margin-right:20px;
+}
+
+#brandLogo h1 {
+    color:#fff;
+}
+
+#menu {
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index: 70;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    list-style: none;
+    color:#fff;
+}
+
+#menu li {
+    display:inline-block;
+    margin:10px 0;
+}
+
+#menu a {
+    padding:0 .7em .7em;
+    color:#fff;
+}
+
+#menu li a:target {
+    background-color: red;
+}
+
+.section {
+    background-color:midnightblue;
+}
+
+#fp-nav ul li a span, #menu-line, .fp-slidesNav ul li a span {
+    background: #fff;
+}
+
+.bold {
+    font-weight: bold;
+}
+.thin {
+    font-weight: thin;
+}
+
+.box {
+    max-width:1368px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:15px;
+    box-shadow:0 0 5px 5px rgba(255, 255, 255, 0.4);
+    padding:10px;
+    min-height:60vh;
+    text-align:center;
+    display:grid;
+    place-items:center;
+}
+
+.fp-overflow {
+    overflow-y:unset !important;
+}
+
+.box {
+    background:rgba(125, 125, 255, 0.5);
+}
