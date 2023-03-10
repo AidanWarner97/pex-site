@@ -5,6 +5,7 @@
 
         <!--JS-->
         <script type="text/javascript" src="js/fullpage.js"></script>
+        <script type="text/javascript" src="js/fetchData.js"></script>
 
         <!--CSS-->
         <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
@@ -12,12 +13,17 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/brands.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/solid.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/lightbox.min.css" />
         
     </head>
     <body>
         <div id="fullpage">
             <div class="section" id="slidehome" data-anchor="home">
-                <div class="box">
+                <div class="box vw-60 vh-75">
                     <div class="content">
                         <p>We started as a small project as PixelExperience (PE) - FanEdition, based on PE for the Xiaomi Mi A2 on Android 10. Then various users and maintainers got interested in supporting this project. Now, we are trying to give you the best of Pixel Experience by adding some necessary practical features you always wanted in PE. This ROM entirely exists because of PE, thanks to them!</p>
                         <p>Created by <span class="bold">Aryan Gupta</span>, Founder of <span class="bold">Pixel Extended</span></p>
@@ -25,42 +31,216 @@
                 </div>
             </div>
             <div class="section" id="slidefeatures" data-anchor="features">
-                <div class="box">
+                <div class="box vw-60 vh-75">
                     <div class="content">
-                        <p>We started as a small project as PixelExperience (PE) - FanEdition, based on PE for the Xiaomi Mi A2 on Android 10. Then various users and maintainers got interested in supporting this project. Now, we are trying to give you the best of Pixel Experience by adding some necessary practical features you always wanted in PE. This ROM entirely exists because of PE, thanks to them!</p>
-                        <p>Created by <span class="bold">Aryan Gupta</span>, Founder of <span class="bold">Pixel Extended</span></p>
+                        <h2>Features</h2>
+                        <p>What makes us different to PixelExperience?</p>
+                        <div id="features-grid">
+                            <div class="box">
+                                <i class="fa-regular fa-bell"></i>
+                                <h4>reTicker Implementation</h4>
+                            </div>
+                            <div class="box">
+                                <i class="fa-solid fa-fingerprint"></i>
+                                <h4>Extensive Fingerprint Options</h4>
+                            </div>
+                            <div class="box">
+                                <i class="fa-solid fa-battery-three-quarters"></i>
+                                <h4>Improved Battery Management</h4>
+                            </div>
+                            <div class="box">
+                                <i class="fa-solid fa-volume-high"></i>
+                                <h4>Per-App Volume Control</h4>
+                            </div>
+                            <div class="box">
+                                <i class="fa-solid fa-sliders"></i>
+                                <h4>Quick Settings Customization</h4>
+                            </div>
+                            <div class="box">
+                                <i class="fa-solid fa-hand-point-up"></i>
+                                <h4>Quick-Tap Support Included</h4>
+                            </div>
+                        </div>
+                        <p>And many more...</p>
                     </div>
                 </div>
             </div>
             <div class="section" id="slidescreenshots" data-anchor="screenshots">
-                <div class="box">
+                <div class="box vw-60 vh-75">
                     <div class="content">
-                        <p>We started as a small project as PixelExperience (PE) - FanEdition, based on PE for the Xiaomi Mi A2 on Android 10. Then various users and maintainers got interested in supporting this project. Now, we are trying to give you the best of Pixel Experience by adding some necessary practical features you always wanted in PE. This ROM entirely exists because of PE, thanks to them!</p>
-                        <p>Created by <span class="bold">Aryan Gupta</span>, Founder of <span class="bold">Pixel Extended</span></p>
+                        <h2>Screenshots</h2>
+                        <div class="image-gallery">
+                            <div class="gallery-item">
+                                <a href="img/screenshots/home.jpg" data-lightbox="gallery" data-image-alt="Screenshot 1 - Home">
+                                  <img src="img/screenshots/home.jpg" alt="Screenshot 1 - Home" class="box">
+                                </a>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="img/screenshots/settings.jpg" data-lightbox="gallery" data-image-alt="Screenshot 2 - Settings" class>
+                                    <img src="img/screenshots/settings.jpg" alt="Screenshot 2 - Settings" class="box">
+                                </a>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="img/screenshots/about.jpg" data-lightbox="gallery" data-image-alt="Screenshot 3 - About" class>
+                                    <img src="img/screenshots/about.jpg" alt="Screenshot 3 - About" class="box">
+                                </a>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="img/screenshots/pextension1.jpg" data-lightbox="gallery" data-image-alt="Screenshot 4 - PExtension 1" class>
+                                    <img src="img/screenshots/pextension1.jpg" alt="Screenshot 4 - PExtension 1" class="box">
+                                </a>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="img/screenshots/pextension2.jpg" data-lightbox="gallery" data-image-alt="Screenshot 5 - PExtension 2" class>
+                                    <img src="img/screenshots/pextension2.jpg" alt="Screenshot 5 - PExtension 2" class="box">
+                                </a>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="img/screenshots/pextension3.jpg" data-lightbox="gallery" data-image-alt="Screenshot 6 - PExtension 3" class>
+                                    <img src="img/screenshots/pextension3.jpg" alt="Screenshot 6 - PExtension 3" class="box">
+                                </a>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="img/screenshots/pextension4.jpg" data-lightbox="gallery" data-image-alt="Screenshot 7 - PExtension 4" class>
+                                    <img src="img/screenshots/pextension4.jpg" alt="Screenshot 7 - PExtension 4" class="box">
+                                </a>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="img/screenshots/lockscreen-media.jpg" data-lightbox="gallery" data-image-alt="Screenshot 8 - Lockscreen with Media Player" class>
+                                    <img src="img/screenshots/lockscreen-media.jpg" alt="Screenshot 8 - Lockscreen with Media Player" class="box">
+                                </a>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="img/screenshots/qs_dark.jpg" data-lightbox="gallery" data-image-alt="Screenshot 9 - Quick Settings in Dark Mode" class>
+                                    <img src="img/screenshots/qs_dark.jpg" alt="Screenshot 9 - Quick Settings in Dark Mode" class="box">
+                                </a>
+                            </div>
+                            <div class="gallery-item">
+                                <a href="img/screenshots/qs_dark-media.jpg" data-lightbox="gallery" data-image-alt="Screenshot 10 - Quick Settings in Dark Mode with Media Player" class>
+                                    <img src="img/screenshots/qs_dark-media.jpg" alt="Screenshot 10 - Quick Settings in Dark Mode with Media Player" class="box">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="section" id="slideteam" data-anchor="team">
-                <div class="box">
+                <div class="box vw-60 vh-75">
                     <div class="content">
-                        <p>We started as a small project as PixelExperience (PE) - FanEdition, based on PE for the Xiaomi Mi A2 on Android 10. Then various users and maintainers got interested in supporting this project. Now, we are trying to give you the best of Pixel Experience by adding some necessary practical features you always wanted in PE. This ROM entirely exists because of PE, thanks to them!</p>
-                        <p>Created by <span class="bold">Aryan Gupta</span>, Founder of <span class="bold">Pixel Extended</span></p>
+                        <h2>Our Team</h2>
+                        <div class="team">
+                            <div class="member box">
+                                <img src="https://github.com/heisinbug.png" width="135px" alt="Aryan Gupta">
+                                <h2>Aryan Gupta</h2>
+                                <p>Founder</p>
+                                <span>
+                                    <a href="https://github.com/heisinbug" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://t.me/Heisinbug" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                                </span>
+                            </div>
+                            <div class="member box">
+                                <img src="https://github.com/ralf979.png" width="135px" alt="Ralf979">
+                                <h2>Ralf979</h2>
+                                <p>Source Maintainer</p>
+                                <span>
+                                    <a href="https://github.com/ralf979" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://t.me/Ralf979" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                                </span>
+                            </div>
+                            <div class="member box">
+                                <img src="https://github.com/iamimmanuelraj.png" width="135px" alt="Immanuel Raj">
+                                <h2>Immanuel Raj</h2>
+                                <p>Device Manager</p>
+                                <span>
+                                    <a href="https://github.com/iamimmanuelraj" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://t.me/iamimmanuelraj" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                                </span>
+                            </div>
+                            <div class="member box">
+                                <img src="https://github.com/AidanWarner97.png" width="135px" alt="Aidan Warner">
+                                <h2>Aidan Warner</h2>
+                                <p>Web Developer</p>
+                                <span>
+                                    <a href="https://github.com/AidanWarner97" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://t.me/AidanWarner" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                                </span>
+                            </div>
+                            <!-- <div class="member box">
+                                <img src="https://github.com/username.png" width="135px" alt="username">
+                                <h2>username</h2>
+                                <p>Graphics Designer</p>
+                                <span>
+                                    <a href="https://github.com/username" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://t.me/username" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                                </span>
+                            </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="section" id="slidedownloads" data-anchor="downloads">
-                <div class="box">
+                <div class="box vw-60 vh-75">
                     <div class="content">
-                        <p>We started as a small project as PixelExperience (PE) - FanEdition, based on PE for the Xiaomi Mi A2 on Android 10. Then various users and maintainers got interested in supporting this project. Now, we are trying to give you the best of Pixel Experience by adding some necessary practical features you always wanted in PE. This ROM entirely exists because of PE, thanks to them!</p>
-                        <p>Created by <span class="bold">Aryan Gupta</span>, Founder of <span class="bold">Pixel Extended</span></p>
+                        <h2>Downloads</h2>
+                        <div id="downloads-grid">
+                            <div>
+                                <ul id="dl-menu">
+                                    <li onclick="showSamsung()">Samsung</li>
+                                    <li onclick="showOnePlus()">OnePlus</li>
+                                    <li onclick="showXiaomi()">Xiaomi</li>
+                                </ul>
+                            </div>
+                            <div id="device-list">
+                                <div id="samsung-devices"></div>
+                                <div id="oneplus-devices" class="none"></div>
+                                <div id="xiaomi-devices" class="none"></div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
             <div class="section" id="slideget-involved" data-anchor="get-involved">
-                <div class="box">
+                <div class="box vw-60 vh-75">
                     <div class="content">
-                        <p>We started as a small project as PixelExperience (PE) - FanEdition, based on PE for the Xiaomi Mi A2 on Android 10. Then various users and maintainers got interested in supporting this project. Now, we are trying to give you the best of Pixel Experience by adding some necessary practical features you always wanted in PE. This ROM entirely exists because of PE, thanks to them!</p>
-                        <p>Created by <span class="bold">Aryan Gupta</span>, Founder of <span class="bold">Pixel Extended</span></p>
+                        <h2>Get Involved</h2>
+                        <div id="gi-boxes">
+                            <div class="box">
+                                <h3>Fancy Building?</h3>
+                                <div class="gi-contents">
+                                    <p>View our source online here and get building!</p>
+                                    <p>Join our build support group on Telegram for any questions</p>
+                                </div>  
+                                <span>
+                                    <a href="https://github.com/PixelExtended/manifest" target="_blank">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://t.me/pexbuilding" target="_blank">
+                                        <i class="fa-brands fa-telegram"></i>
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="box">
+                                <h3>Become an official builder!</h3>
+                                <div class="gi-contents">
+                                    <p>Have you got the skills needed to manage your trees?</p>
+                                    <p>Have you been releasing unofficially?</p>
+                                    <p>Visit our Github page and apply for Official status!</p>
+                                </div>
+                                <a href="https://github.com/PixelExtended/official_devices/issues/new/choose" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <div class="box">
+                                <h3>Join in the conversation</h3>
+                                <div class="gi-contents">
+                                    <p>We're available in our global Telegram group, and you can also find specific groups for your device there too!</p>
+                                </div>
+                                <a href="https://t.me/pixelextended" target="_blank">
+                                    <i class="fa-brands fa-telegram"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,9 +258,11 @@
                 <li><a href="#team">Our Team</a></li>
                 <li><a href="#downloads">Downloads</a></li>
                 <li><a href="#get-involved">Get Involved</a></li>
-                <li><a href=""><button>Donate</button></a></li>
+                <li id="donate-btn"><a href="https://heisinbug.tech/pay" target="_blank">Donate <i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
             </ul>
         </header>
         <script type="text/javascript" src="js/fp-intent.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/accordion.min.js"></script>
     </body>
 </html>
