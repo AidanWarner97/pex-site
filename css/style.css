@@ -96,7 +96,7 @@ header {
     margin-right:auto;
     border-radius:50px;
     background: linear-gradient(145deg,#4285F4,#224783);
-    box-shadow: 31px 31px 62px #073042, -31px -31px 62px #05202c;
+    box-shadow: 16px 16px 31px #073042, -16px -16px 31px #05202c;
     padding:10px;
     text-align:center;
     display:grid;
@@ -158,8 +158,6 @@ h2,p {
     border-radius: 25px;
     width: 10vw;
     transition:all 0.3s;
-    box-shadow: 16px 16px 31px #073042, -16px -16px 31px #05202c;
-    
 }
 
 #features-grid .box i {
@@ -284,7 +282,7 @@ h2,p {
     border-radius: 10px;
     background: #D7EFFE !important;
     color:#000;
-    box-shadow: 31px 31px 62px #073042, -31px -31px 62px #05202c;
+    box-shadow: 16px 16px 31px #073042, -16px -16px 31px #05202c;
     transition: all 0.3s;
     padding: 10px 0;
 }
