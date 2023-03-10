@@ -50,21 +50,33 @@ header {
     margin:10px 0;
 }
 
-#menu a {
+#menu li a {
     padding:0 .7em .7em;
     color:#fff;
+    text-decoration: none;
+    transition:all 0.3s;
 }
 
-#menu li a:target {
-    background-color: red;
+#menu li a:hover {
+    box-shadow: 0 3px 0 #fff;
+}
+
+#donate-btn {
+    background-color: #4BB3FD;
+    padding: 5px;
+    border-radius: 5px;
+    transition:all 0.3s;
+}
+#donate-btn:hover {
+    background-color:#027BCE;
 }
 
 .section {
-    background-color:midnightblue;
+    background-color:#3DDC84;
 }
 
 #fp-nav ul li a span, #menu-line, .fp-slidesNav ul li a span {
-    background: #fff;
+    background: #191970;
 }
 
 .bold {
@@ -75,22 +87,249 @@ header {
 }
 
 .box {
-    max-width:1368px;
     margin-left:auto;
     margin-right:auto;
-    border-radius:15px;
-    box-shadow:0 0 5px 5px rgba(255, 255, 255, 0.4);
+    border-radius:50px;
+    background: linear-gradient(145deg,#4285F4,#224783);
+    box-shadow: 31px 31px 62px #073042, -31px -31px 62px #05202c;
     padding:10px;
-    min-height:60vh;
     text-align:center;
     display:grid;
     place-items:center;
+    color:white;
 }
 
 .fp-overflow {
     overflow-y:unset !important;
 }
 
-.box {
-    background:rgba(125, 125, 255, 0.5);
+#slidehome .content {
+    background-image: url("../img/mi_a2.png");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.vw-60 {
+    width:60vw;
+}
+
+.vh-75 {
+    height:75vh;
+}
+
+#slidehome .content {
+    width:50%;
+    padding: 50px 20px;
+}
+
+h2,p {
+    z-index: 1;
+    position:relative;
+}
+
+#slidefeatures p {
+    margin-bottom: 50px;
+}
+
+#features-grid {
+    display:grid;
+    column-gap: 45px;
+    row-gap: 45px;
+    grid-template-columns: auto auto auto;
+    margin-bottom:50px;
+}
+
+#features-grid .box {
+    border-radius: 25px;
+    width: 10vw;
+    transition:all 0.3s;
+    box-shadow: 16px 16px 31px #073042, -16px -16px 31px #05202c;
+    background-color: #F86734 !important;
+}
+
+#features-grid .box i {
+    font-size:24px;
+}
+
+#features-grid .box h4 {
+    margin: 0;
+}
+
+#features-grid .box:hover {
+    box-shadow: 5px 5px 10px #073042, -5px -5px 10px #05202c;
+}
+
+
+.image-gallery {
+    display:grid;
+    column-gap: 45px;
+    row-gap: 45px;
+    grid-template-columns: auto auto auto auto;
+}
+.image-gallery .gallery-item a {
+    width: 10vw;
+    height:100px;
+}
+.image-gallery .gallery-item a img {
+    width:10vw;
+    height:100px;
+    object-fit:cover;
+    object-position:0 20%;
+    transition:all 0.3s;
+}
+.image-gallery .gallery-item a img:hover {
+    box-shadow: 5px 5px 10px #073042, -5px -5px 10px #05202c;
+}
+.lightbox-container {
+    position:absolute !important;
+    
+}
+.lightbox-content {
+    height:80vh;
+}
+.lightbox-content img {
+    max-height:100% !important;
+}
+.lightbox-btn-previous {
+    right:100%;
+    left:auto !important;
+}
+.lightbox-btn-next {
+    left:100%;
+    right:auto !important;
+}
+.lightbox-btn-previous,.lightbox-btn-next {
+    border:1px solid white;
+}
+
+#slideteam h2 {
+    margin-bottom:50px;
+}
+
+.team {
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 60px;
+}
+.member {
+    width: 10vw;
+    transition:all 0.3s;
+}
+.member h2 {
+    margin-bottom:20px !important;
+}
+.member img {
+    border-radius:36px;
+}
+.member a {
+    margin-left:10px;
+    margin-right:10px;
+}
+.member i {
+    color:white;
+    font-size:x-large;
+}
+.member:hover {
+    box-shadow: 5px 5px 10px #073042, -5px -5px 10px #05202c;
+}
+
+#downloads-grid {
+    display:block;
+}
+
+#dl-menu {
+    list-style:none;
+    padding:0;
+    position: relative;
+    z-index: 99999;
+    margin-bottom:50px;
+}
+
+#dl-menu li {
+    width:10vw;
+    padding:10px 0px;
+    margin:0 10px;
+    background-color: #4BB3FD;
+    border-radius: 15px;
+    transition: all 0.3s;
+    display:inline-block;
+}
+#dl-menu li:hover {
+    background-color:#027BCE;
+}
+
+#device-list {
+    height:400px;
+}
+
+.device-card {
+    display:inline-block;
+    width:10vw;
+    border-radius: 10px;
+    background: linear-gradient(145deg,#171765,#1b1b78);
+    box-shadow: 31px 31px 62px #073042, -31px -31px 62px #05202c;
+    transition: all 0.3s;
+    padding: 10px 0;
+}
+
+.device-card:hover {
+    box-shadow: 5px 5px 10px #073042, -5px -5px 10px #05202c;
+}
+
+.device-card div {
+    display:block;
+}
+
+.device-card a {
+    color:white;
+    text-decoration: none;
+    display:block;
+    height:100%;
+}
+
+.device-url {
+    text-align: center;
+}
+.device-url * {
+    color:white;
+}
+.device-code {
+    font-style: italic;
+    font-size: smaller;
+}
+.device-name {
+    font-size:large;
+}
+
+.none {
+    display:none !important;
+}
+
+#samsung-devices,#oneplus-devices,#xiaomi-devices {
+    display:grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    column-gap: 60px;
+    row-gap: 60px;
+}
+
+#gi-boxes {
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+#gi-boxes .box {
+    width:75%;
+    height:350px;
+    transition:all 0.3s;
+}
+#gi-boxes .box:hover {
+    box-shadow: 5px 5px 10px #073042, -5px -5px 10px #05202c;
+}
+#gi-boxes .gi-contents {
+    height:200px;
+}
+#gi-boxes a {
+    color:white;
+    text-decoration: none;
+    font-size: xx-large;
 }
