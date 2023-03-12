@@ -233,6 +233,7 @@ h2,p {
 }
 .member img {
     border-radius:36px;
+    width:90%;
 }
 .member a {
     margin-left:10px;
@@ -333,17 +334,148 @@ h2,p {
 }
 #gi-boxes .box {
     width:75%;
-    height:350px;
+    height:100%;
     transition:all 0.3s;
 }
 #gi-boxes .box:hover {
     box-shadow: 5px 5px 10px #073042, -5px -5px 10px #05202c;
 }
 #gi-boxes .gi-contents {
-    height:200px;
+    height:100%;
 }
 #gi-boxes a {
     color:white;
     text-decoration: none;
     font-size: xx-large;
+}
+
+@media only screen and (max-width:1279px) {
+    .member {
+        width:9vw;
+    }
+    .member h2 {
+        font-size:larger;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    #menu {
+        display:none;
+    }
+    #brandLogo {
+        width:100%;
+        left:0;
+        display:flex;
+        align-content: center;
+        justify-content: center;
+        height:8vh;
+        font-size:2em;
+    }
+    #slidehome .content {
+        width:80%;
+        font-size:xx-large;
+    }
+    #slidefeatures h2 {
+        font-size: 350%;
+    }
+    #slidefeatures h4 {
+        font-size:175%;
+    }
+    #slidefeatures i {
+        font-size:300% !important;
+    }
+    #slidefeatures p {
+        font-size: 250%;
+    }
+    #features-grid {
+        grid-template-columns: auto;
+    }
+    #features-grid .box {
+        width:30vw;
+    }
+    #slidescreenshots h2 {
+        font-size:350%;
+    }
+    .image-gallery {
+        grid-template-columns: auto auto;
+    }
+    .image-gallery .gallery-item a img {
+        width:20vw;
+        height:200px;
+    }
+    .lightbox-btn {
+        width:4.4em !important;
+        height:4.4em !important;
+    }
+    #slideteam h2 {
+        font-size:350%;
+    }
+    .team {
+        grid-template-columns: auto;
+        grid-row-gap: 50px;
+    }
+    .member {
+        width:45vw;
+    }
+    .member img {
+        width:12vw;
+    }
+    .member h2 {
+        font-size: 250% !important;
+    }
+    .member p {
+        font-size:xx-large;
+        margin:0;
+    }
+    .member i {
+        font-size:xxx-large;
+    }
+    .team .box {
+        grid-template-columns: 1fr 1fr;
+    }
+    #slidedownloads h2 {
+        font-size:350%;
+    }
+    #slidedownloads .content {
+        height:80%;
+    }
+    #dl-menu {
+        font-size:xx-large;
+    }
+    #dl-menu li {
+        width:17vw;
+    }
+    #samsung-devices, #oneplus-devices, #xiaomi-devices {
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    .device-card {
+        width:95%;
+    }
+    .device-code {
+        font-style: italic;
+        font-size: x-large;
+    }
+    .device-name {
+        font-size:xx-large;
+    }
+    .device-username {
+        font-size:x-large;
+    }
+    #slideget-involved h2 {
+        font-size:350%;
+    }
+    #gi-boxes {
+        grid-template-columns: auto;
+        grid-row-gap: 50px;
+    }
+    #gi-boxes h3 {
+        font-size:175%;
+    }
+    #gi-boxes p {
+        font-size:x-large;
+    }
+    #gi-boxes i {
+        font-size:xxx-large;
+    }
 }
