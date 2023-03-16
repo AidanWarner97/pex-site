@@ -55,14 +55,16 @@ function showGoogle() {
 };
 ```
 
-You'll also need to add the following line to the other sections:
+You'll also need to add the following line to the other sections:  
 `document.getElementById("google-devices").classList.add("none");`
   
-Once you've done all of that, we need to add a simple line of html.  So open `index.html` and find `<div id="device-list">`  
-In that div, simply add a new div to the list like `<div id="google-devices" class="none"></div>`  
+Once you've done all of that, we need to add a simple line of html.  
+So open `index.html` and find `<div id="device-list">`  
+In that div, simply add a new div to the list like  
+`<div id="google-devices" class="none"></div>`  
 You should end up with something like this:
 
-```js
+```html
 <div id="device-list">
     <div id="samsung-devices"></div>
     <div id="oneplus-devices" class="none"></div>
