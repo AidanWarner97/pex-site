@@ -1,6 +1,6 @@
 const samsungDevices = ["beyond0lte", "beyond1lte", "beyond2lte", "beyondx", "d1", "d2s", "d2x"];
 const oneplusDevices = ["lemonade", "lemonadep"];
-const xiaomiDevices = ["raphael", "alioth", "violet", "munch"];
+const xiaomiDevices = ["raphael", "alioth", "violet", "munch", "perseus"];
 
 // Make an HTTP request to fetch the data for each device
 samsungDevices.forEach(deviceCode => {
