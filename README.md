@@ -24,7 +24,7 @@ Take a look in `js/fetchData.js` and see the top const variables on how to setup
 For example, to add a Google section, you'd create something like:
 >`const googleDevices = ["codename", "codename2"];`
   
-Once you've added this, scroll down to line 49, and copy the section down to line 69.  
+Once you've added this, scroll down to around line 49, and copy the section down to, roughly, line 69.  
 Then create some space and paste the code you've copied.  
 Now, you'll just need to modify that copied code for every occurrence of `xiaomiDevices` to `googleDevices`.  
   
@@ -61,7 +61,9 @@ You should end up with something like this:
     <div id="google-devices" class="none"></div>
 </div>
 ```
-The class "none" is to purely to stop all the different sections showing at the same time as by default, the Samsung section shows on page load.
+The class "none" is to purely to stop all the different sections showing at the same time as by default, the Samsung section shows on page load.  
+  
+Finally, modify this README at the very top to update the current number of sections and the manufacturer array.
 ___
 
 ## You're done!
